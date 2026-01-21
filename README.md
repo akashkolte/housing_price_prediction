@@ -1,6 +1,13 @@
 # 🏠 Housing Price Prediction
 
-A machine learning project that predicts house prices using the **House Prices: Advanced Regression Techniques** dataset from Kaggle.
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-Regression-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Dataset](https://img.shields.io/badge/Dataset-Kaggle-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+A machine learning project that predicts house prices using the  
+**House Prices: Advanced Regression Techniques** dataset from Kaggle.
 
 This notebook implements an end-to-end regression pipeline — from data exploration and preprocessing to training and evaluating models like **Linear Regression** and **XGBoost**.
 
@@ -22,44 +29,41 @@ This project focuses on:
 
 ## 📁 Dataset
 
-The dataset used comes from the **Kaggle House Prices competition**:
+Dataset: **Kaggle – House Prices: Advanced Regression Techniques**
 
+Files used:
 - `train.csv` → training data with labels  
 - `test.csv` → data to make predictions on  
 
-You must download these files from Kaggle and place them in the same project directory.
-
-Dataset link:  
+Download from:  
 https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 
 ---
 
 ## 🛠 Key Steps in the Notebook
 
-### 🔍 1. Exploratory Data Analysis (EDA)
-- Understand target variable distribution
-- Handle right skew using log transformation
-- Identify relationships between features and target
+### 🔍 1. Exploratory Data Analysis
+- Analyzed SalePrice distribution  
+- Handled right skew using log transformation  
+- Correlation analysis of top features  
 
 ### 📊 2. Data Cleaning & Preprocessing
-- Handle missing values
-- Apply transformations
-- Encode categorical features
-  - One-Hot Encoding for nominal categories
-  - Custom ordering / label encoding for ordinal relationships
+- Missing value handling  
+- Feature engineering  
+- Encoding:
+  - One-Hot Encoding for nominal features  
+  - Label Encoding for ordinal features  
 
 ### 🤖 3. Model Training
-Two models were trained and evaluated:
-- **Linear Regression**  
-- **XGBoost Regressor**
-
-XGBoost achieved significantly better performance.
+Models used:
+- Linear Regression  
+- XGBoost Regressor  
 
 ### 🔎 4. Model Evaluation
-Used metrics like:
-- RMSE (Root Mean Squared Error)
-- MAE (Mean Absolute Error)
-- R² Score
+Metrics:
+- RMSE  
+- MAE  
+- R² Score  
 
 ---
 
@@ -70,16 +74,15 @@ Used metrics like:
 | Linear Regression | ~0.80     |
 | XGBoost Regressor | ~0.91     |
 
-XGBoost performed much better due to its ability to handle nonlinear relationships and complex interactions.
+XGBoost performed significantly better due to its ability to capture non-linear relationships.
 
 ---
 
 ## 📦 How to Run
 
-1. Clone repository  
-   ```bash
-   git clone https://github.com/akashkolte/housing_price_prediction.git
-2.	Download dataset files from Kaggle
+git clone https://github.com/akashkolte/housing_price_prediction.git
+
+1.	Download dataset files from Kaggle
 3.	Place train.csv and test.csv in the project directory
 4.	Open and run the notebook or use Google Colab
 
